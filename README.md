@@ -33,9 +33,11 @@ How to run this program :
 Step 1 : Once you run the program it will show some text where it will tell you to say a word.
          Try to say that word 2-3 times as sometimes it takes time to recognise the voice from the microphone.
        ![Desktop Screenshot 2021 11 28 - 22 23 43 07](https://user-images.githubusercontent.com/78537973/143778273-61072072-5934-402f-b8a2-92dee8bf5f01.png)
+           
        ![Desktop Screenshot 2021 11 28 - 22 28 36 68](https://user-images.githubusercontent.com/78537973/143778288-78a20d3c-9371-419f-9ad7-2c261a90ae67.png)
 
 Step 2 : After that it will ask you to say the song name. When you give the song name it will search and play the song within 2-3 seconds.
 ![Desktop Screenshot 2021 11 28 - 22 33 43 20](https://user-images.githubusercontent.com/78537973/143778298-539085e6-f64a-4ef1-bd9c-7454f70c78b6.png)
+
 ![Desktop Screenshot 2021 11 28 - 22 33 44 12](https://user-images.githubusercontent.com/78537973/143778302-fecc2e1f-3235-4cb5-8df3-72d67d58e3b7.png)
 And thats it, its easy as that.
