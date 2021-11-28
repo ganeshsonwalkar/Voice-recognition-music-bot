@@ -44,3 +44,4 @@ Step 2 : After that it will ask you to say the song name. When you give the song
 ![Desktop Screenshot 2021 11 28 - 22 33 44 12](https://user-images.githubusercontent.com/78537973/143778302-fecc2e1f-3235-4cb5-8df3-72d67d58e3b7.png)
 
 And thats it, its easy as that.
+Make sure you download both chromedriver.exe and Musicbot.py and put them in the same folder.
