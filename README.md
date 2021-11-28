@@ -32,7 +32,8 @@ How to run this program :
 
 Step 1 : Once you run the program it will show some text where it will tell you to say a word.
          Try to say that word 2-3 times as sometimes it takes time to recognise the voice from the microphone.
-       ![Desktop Screenshot 2021 11 28 - 22 23 43 07](https://user-images.githubusercontent.com/78537973/143778273-61072072-5934-402f-b8a2-92dee8bf5f01.png)
+       
+  ![Desktop Screenshot 2021 11 28 - 22 23 43 07](https://user-images.githubusercontent.com/78537973/143778273-61072072-5934-402f-b8a2-92dee8bf5f01.png)
       
   ![Desktop Screenshot 2021 11 28 - 22 28 36 68](https://user-images.githubusercontent.com/78537973/143778338-53b136a6-966f-4936-9d98-8a524f9adbcb.png)
 
