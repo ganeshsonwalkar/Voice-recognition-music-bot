@@ -69,6 +69,7 @@ while(1):
         response3.adjust_for_ambient_noise(source,duration=1)
         audio = response3.listen(source)
         if ('Play' in response3.recognize_google(audio)):
+            print("Stopped.")
             cl=response3.listen(source)
             #storing the song name in a variable so we can use it for youtube search.
             songName=response3.recognize_google(cl)
