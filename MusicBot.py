@@ -91,12 +91,11 @@ while(1):
             audio = response3.listen(source)     
         if ('Close' in response3.recognize_google(audio)):
             cl=response3.listen(source)
+            print("Closing the bot.")
             #closing the chromedriver
             driver.quit()
             os.system("taskkill /chromedriver.exe")
             break
                         
   
-
-
 
