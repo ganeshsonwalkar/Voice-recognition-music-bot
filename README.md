@@ -43,12 +43,5 @@ Step 2 : After that it will ask you to say the song name. When you give the song
 
 ![Desktop Screenshot 2021 11 28 - 22 33 44 12](https://user-images.githubusercontent.com/78537973/143778302-fecc2e1f-3235-4cb5-8df3-72d67d58e3b7.png)
 
-Step 3: To put another song just say "Play songname" and it will start another song for you.
-        if you say close then it will close the bot for you.
-        
-![Desktop Screenshot 2021 11 28 - 23 32 04 87](https://user-images.githubusercontent.com/78537973/143780230-739670ba-ff90-4448-bd2f-cd24090ef90c.png)
-        
-![Desktop Screenshot 2021 11 28 - 23 32 05 31](https://user-images.githubusercontent.com/78537973/143780233-9ccbd1c9-a778-443c-9d87-79f41a5d89d6.png)
-
 And thats it, its easy as that.
 Make sure you download both chromedriver.exe and Musicbot.py and put them in the same folder.
