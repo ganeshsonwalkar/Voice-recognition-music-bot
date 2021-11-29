@@ -15,7 +15,6 @@ with sr.Microphone() as source:
         print("Say Max to start.(Repeat 2 times)")
         #audio variable will store the input from microphone.
         response1.adjust_for_ambient_noise(source,duration=1)
-        response1.energy_threshold = 300
         audio=response1.listen(source)
         try:
             #we are using while loop so the code will execute only when the
@@ -23,8 +22,10 @@ with sr.Microphone() as source:
             #and it will run until we get the right word that is Max.
             while(1):
                 if ('Max' in response2.recognize_google(audio)):
+                    response2.adjust_for_ambient_noise(source,duration=1)
                     audio=response1.listen(source)
                     break
+                response2.adjust_for_ambient_noise(source,duration=1)
                 audio=response1.listen(source)
                 print("Try again..")
         except Exception as e:
@@ -62,41 +63,6 @@ if 'Max' in response2.recognize_google(audio):
         except Exception as e:
             print("Error",e)
             
-#while loop so user can request another song or close bot.
-response3=sr.Recognizer()        
-while(1):
-    with sr.Microphone() as source:  
-        response3.adjust_for_ambient_noise(source,duration=1)
-        audio = response3.listen(source)
-        if ('Play' in response3.recognize_google(audio)):
-            print("Stopped.")
-            cl=response3.listen(source)
-            #storing the song name in a variable so we can use it for youtube search.
-            songName=response3.recognize_google(cl)
-            print("Searching for",songName)
-            #defined a url string for youtube search query.
-            url="https://www.youtube.com/results?search_query="
-            #we are using selenium to automate youtube to play a song.
-            #creating chromeoptions object for chromedriver.
-            #basically these are arguments that control the behaviour of chrome automation.
-            options = webdriver.ChromeOptions()
-            #headless makes the browser run in background without having to open it.
-            options.add_argument('headless')
-            #passing the options to chrome webdriver.
-            driver = webdriver.Chrome('./chromedriver', chrome_options=options)
-            #get method is used to reach a webpage.
-            driver.get(url+songName)
-            #this element path is used to click on the song that is displayed in search results.
-            driver.find_element_by_xpath("/html/body/ytd-app/div/ytd-page-manager/ytd-search/div[1]/ytd-two-column-search-results-renderer/div/ytd-section-list-renderer/div[2]/ytd-item-section-renderer/div[3]/ytd-video-renderer[1]/div[1]/ytd-thumbnail/a").click()
-            print("Playing ",songName)
-            audio = response3.listen(source)     
-        if ('Close' in response3.recognize_google(audio)):
-            cl=response3.listen(source)
-            print("Closing the bot.")
-            #closing the chromedriver
-            driver.quit()
-            os.system("taskkill /chromedriver.exe")
-            break
                         
   
 
